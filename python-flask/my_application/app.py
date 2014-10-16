@@ -5,6 +5,14 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     return "Hello World!"
+  
+@app.route("/")
+def address():
+    return "Dublin!"
+  
+@app.route("/")
+def message():
+    return "How are you?"
 
 @app.route('/upload', methods=['GET', 'POST'])
 def upload_file():
