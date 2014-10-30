@@ -7,6 +7,7 @@ def index():
 return 'Index Page'
 @app.route('/hello')
 def hello():
+<<<<<<< HEAD
 return 'Hello World'
 @app.route('/user/<username>')
 def show_user_profile(username):
@@ -16,6 +17,18 @@ return 'User %s' % username
 def show_post(post_id):
 # show the post with the given id, the id is an integer
 return 'Post %d' % post_id
+=======
+    return "Hello World!"
+
+@app.route("/")
+def address():
+    return "Dublin!"
+  
+@app.route("/")
+def message():
+    return "How are you?"
+
+>>>>>>> e3545d81ac7e72b259f0cbf6387101363a955bbe
 @app.route('/upload', methods=['GET', 'POST'])
 def upload_file():
 if request.method == 'POST':
